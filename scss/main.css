@@ -588,3 +588,37 @@
       background: #337FFF; }
     .s-theme-f .s-c-social-media a.instagram:hover {
       background: #FF008A; }
+  .s-theme-f .s-c-banner-tools h5 {
+    color: #000;
+    font-size: 32px;
+    line-height: normal; }
+    @media (min-width: 991px) {
+      .s-theme-f .s-c-banner-tools h5 {
+        font-size: 40px; } }
+  .s-theme-f .s-c-banner-tools p {
+    color: #A3A2A2;
+    font-size: 16px;
+    line-height: normal; }
+  .s-theme-f .s-c-banner-tools .s-c-banner-tools__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+    @media (min-width: 991px) {
+      .s-theme-f .s-c-banner-tools .s-c-banner-tools__btn {
+        flex-direction: row; } }
+    .s-theme-f .s-c-banner-tools .s-c-banner-tools__btn .btn {
+      border-radius: 5px;
+      background: #B9CC2A;
+      color: #FFF;
+      font-size: 16px;
+      line-height: normal;
+      text-transform: none;
+      letter-spacing: unset;
+      font-weight: 700; }
+      .s-theme-f .s-c-banner-tools .s-c-banner-tools__btn .btn:hover {
+        background: #5B650C; }
+  .s-theme-f .s-c-3d .s-c-3d__iframe iframe {
+    height: 600px; }
+    @media (min-width: 991px) {
+      .s-theme-f .s-c-3d .s-c-3d__iframe iframe {
+        height: 1120px; } }

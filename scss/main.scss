@@ -928,7 +928,7 @@
                 }
             }
 
-            input[type="checkbox"] + label {
+            input[type="checkbox"]+label {
                 color: #BBB;
                 font-size: 14px;
                 line-height: normal;
@@ -939,7 +939,7 @@
                 }
             }
 
-            .btn{
+            .btn {
                 border-radius: 5px;
                 background: #B9CC2A;
                 color: #FFF;
@@ -957,7 +957,7 @@
     }
 
     .s-c-social-media {
-        span{
+        span {
             color: #000000;
             font-size: 18px;
             line-height: normal;
@@ -966,10 +966,12 @@
                 font-size: 20px;
             }
         }
+
         .bg-medium-gray {
             background-color: #000000;
         }
-        a{
+
+        a {
             background: #FFFFFF;
             border-radius: 5px;
             width: 39px;
@@ -1001,6 +1003,61 @@
             &.instagram {
                 &:hover {
                     background: #FF008A;
+                }
+            }
+        }
+    }
+
+    .s-c-banner-tools {
+        h5 {
+            color: #000;
+            font-size: 32px;
+            line-height: normal;
+
+            @media (min-width: 991px) {
+                font-size: 40px;
+            }
+        }
+
+        p {
+            color: #A3A2A2;
+            font-size: 16px;
+            line-height: normal;
+        }
+
+        .s-c-banner-tools__btn {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @media (min-width: 991px) {
+                flex-direction: row;
+
+            }
+
+            .btn {
+                border-radius: 5px;
+                background: #B9CC2A;
+                color: #FFF;
+                font-size: 16px;
+                line-height: normal;
+                text-transform: none;
+                letter-spacing: unset;
+                font-weight: 700;
+
+                &:hover {
+                    background: #5B650C;
+                }
+            }
+        }
+    }
+
+    .s-c-3d{
+        .s-c-3d__iframe{
+            iframe{
+                height: 600px;
+                @media (min-width: 991px) {
+                    height: 1120px;
                 }
             }
         }
