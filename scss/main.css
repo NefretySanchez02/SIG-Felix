@@ -39,8 +39,14 @@
     font-style: normal; } }
   .s-theme-f .alt-font {
     font-family: 'Inter', sans-serif; }
+  @media (min-width: 991px) {
+    .s-theme-f .s-c-header.sticky .navbar {
+      margin-top: 0px; } }
   .s-theme-f .s-c-header.sticky .navbar .nav-link.active {
     color: #B9CC2A !important; }
+  @media (min-width: 991px) {
+    .s-theme-f .s-c-header .navbar {
+      margin-top: 20px; } }
   .s-theme-f .s-c-header .navbar .navbar-brand img {
     max-height: 50px; }
     @media (min-width: 991px) {
