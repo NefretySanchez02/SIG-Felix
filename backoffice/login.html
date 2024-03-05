@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Admin Module</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--     Fonts and icons     -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+    />
+    <!-- Material Kit CSS -->
+    <link href="assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="main-panel w-100">
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-4">
+                <div class="card card-profile">
+                  <div
+                    class="login-avatar"
+                    style="
+                      background: #ffffff;
+                      box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+                    "
+                  >
+                    <a href="javascript:;">
+                      <img class="img" src="./assets/img/logo.png" />
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-category" style="color: #76b835">SIG</h6>
+                    <h4 class="card-title">Portal de acceso</h4>
+
+                    <form class="mb-4" action="">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group bmd-form-group">
+                            <input
+                              id="user"
+                              type="text"
+                              class="form-control px-2"
+                              placeholder="Usuario"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group bmd-form-group">
+                            <input
+                              id="pwd"
+                              type="password"
+                              class="form-control px-2"
+                              placeholder="Contrase&ntilde;a"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+
+                    <a
+                      id="init-login"
+                      href="javascript:;"
+                      class="btn btn-primary btn-round"
+                      style="
+                        background-color: #76b835;
+                        border-color: #76b835;
+                        box-shadow: none;
+                      "
+                      >Iniciar sesi&oacute;n</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="container-fluid">
+            <nav class="float-left">
+              <ul>
+                <li>
+                  <a href="#"> SIG </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="copyright float-right">
+              &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+            </div>
+            <!-- your footer here -->
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./assets/js/core/jquery.min.js"></script>
+    <script src="./assets/js/auth.js"></script>
+  </body>
+</html>

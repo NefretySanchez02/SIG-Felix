@@ -1,0 +1,55 @@
+.unable span {
+  text-decoration: line-through;
+  color: #aaa !important;
+}
+
+#message-datail.modal {
+  overflow: auto;
+}
+
+#message-datail .modal-dialog {
+  max-width: 80%;
+}
+
+#create-news.modal {
+  overflow: auto;
+}
+
+#create-news .modal-dialog {
+  max-width: 80%;
+}
+
+#view-course.modal {
+  overflow: auto;
+}
+
+#view-course .modal-dialog {
+  max-width: 60%;
+}
+
+#btn_next,
+#btn_prev {
+  font-weight: bold;
+}
+
+#btn_next {
+  margin-left: 10px;
+}
+
+#btn_prev {
+  margin-right: 10px;
+}
+
+#page {
+  font-weight: bold;
+}
+
+.card-profile .login-avatar {
+  width: 250px;
+  height: 100px;
+}
+
+.card-profile .login-avatar img {
+  width: 250px;
+  height: 100px;
+}

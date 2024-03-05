@@ -71,12 +71,14 @@
                 </div>
                 <div class="col-auto col-lg-1 text-right pr-0 font-size-0">
                     <div class="s-c-header__social-media header-search-icon search-form-wrapper">
-                        <a href="#" class="s-c-header__facebook search-form-icon header-search-form">
+                        <a href="https://www.facebook.com/profile.php?id=100063625026057"
+                            class="s-c-header__facebook search-form-icon header-search-form">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </div>
                     <div class="s-c-header__social-media header-search-icon search-form-wrapper">
-                        <a href="#" class="s-c-header__instagram search-form-icon header-search-form">
+                        <a href="https://www.instagram.com/sintegralesygestion/"
+                            class="s-c-header__instagram search-form-icon header-search-form">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -110,7 +112,7 @@
             <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center">
                 <!-- start fancy text box item -->
                 <div class="col col-sm-8 md-margin-30px-bottom xs-margin-15px-bottom">
-                    <div
+                    <a id="contact-mail"
                         class="feature-box feature-box-hide-show-hover bg-white border-radius-6px overflow-hidden box-shadow-large box-shadow-extra-large-hover">
                         <div
                             class="feature-box-move-bottom-top padding-5-rem-lr padding-15px-tb lg-padding-2-half-rem-lr md-padding-4-half-rem-lr">
@@ -125,12 +127,12 @@
                             </div>
                         </div>
                         <div class="feature-box-overlay"></div>
-                    </div>
+                    </a>
                 </div>
                 <!-- end fancy text box item -->
                 <!-- start fancy text box item -->
                 <div class="col col-sm-8 md-margin-30px-bottom xs-margin-15px-bottom">
-                    <div
+                    <a id="contact-phone"
                         class="feature-box feature-box-hide-show-hover bg-white border-radius-6px overflow-hidden box-shadow-large box-shadow-extra-large-hover">
                         <div
                             class="feature-box-move-bottom-top padding-5-rem-lr padding-15px-tb lg-padding-2-half-rem-lr md-padding-4-half-rem-lr">
@@ -145,12 +147,12 @@
                             </div>
                         </div>
                         <div class="feature-box-overlay"></div>
-                    </div>
+                    </a>
                 </div>
                 <!-- end fancy text box item -->
                 <!-- start fancy text box item -->
                 <div class="col col-sm-8">
-                    <div
+                    <a id="contact-whtasapp"
                         class="feature-box feature-box-hide-show-hover bg-white border-radius-6px overflow-hidden box-shadow-large box-shadow-extra-large-hover">
                         <div
                             class="feature-box-move-bottom-top padding-5-rem-lr padding-15px-tb lg-padding-2-half-rem-lr md-padding-4-half-rem-lr">
@@ -165,8 +167,8 @@
                             </div>
                         </div>
                         <div class="feature-box-overlay"></div>
-                    </div>
                 </div>
+                </a>
                 <!-- end fancy text box item -->
             </div>
         </div>
@@ -185,32 +187,29 @@
                         </div>
                         <div class="col-12">
                             <!-- start contact form -->
-                            <form action="#" method="post">
+                            <form id="contact-form" >
                                 <div class="row row-cols-1 row-cols-md-2">
                                     <div class="col margin-4-rem-bottom sm-margin-25px-bottom">
                                         <input class="medium-input bg-white margin-25px-bottom required" type="text"
-                                            name="name" placeholder="Nombre">
-                                        <input class="medium-input bg-white margin-25px-bottom required" type="email"
-                                            name="email" placeholder="Dirección">
-                                        <input class="medium-input bg-white mb-0" type="tel" name="phone"
-                                            placeholder="Telefóno">
+                                            name="name" placeholder="Nombre" id="name-form" required>
+                                        <input class="medium-input bg-white margin-25px-bottom required" type="text"
+                                            name="email" placeholder="Dirección" id="address-form" required>
+                                        <input class="medium-input bg-white mb-0 required" type="tel" name="phone"
+                                            placeholder="Telefóno" id="phone-form" required>
                                     </div>
                                     <div class="col margin-4-rem-bottom sm-margin-10px-bottom">
-                                        <textarea class="medium-textarea h-200px bg-white" name="comment"
-                                            placeholder="Mensaje"></textarea>
+                                        <textarea class="medium-textarea h-200px bg-white required" name="comment"
+                                            placeholder="Mensaje" id="message-form" required></textarea>
                                     </div>
                                     <div class="col text-left sm-margin-30px-bottom">
-                                        <input type="checkbox" name="terms_condition" id="terms_condition" value="1"
-                                            class="terms-condition d-inline-block align-top w-auto mb-0 margin-5px-top margin-10px-right">
+                                        <input type="checkbox" name="terms_condition" id="terms_condition"
+                                            class="terms-condition d-inline-block align-top w-auto mb-0 margin-5px-top margin-10px-right" required>
                                         <label for="terms_condition"
                                             class="text-small d-inline-block align-top w-85">Usamos las tecnologías mas
                                             recientes en el mercado, integrándolas con nuestro conocimiento.</label>
                                     </div>
                                     <div class="col text-center text-md-right">
-                                        <input type="hidden" name="redirect" value="">
-                                        <button
-                                            class="btn btn-medium mb-0 submit"
-                                            type="submit">Enviar</button>
+                                        <button class="btn btn-medium mb-0 submit" type="submit" onclick="sendForm()">Enviar</button>
                                     </div>
                                 </div>
                                 <div class="form-results d-none"></div>
@@ -224,12 +223,12 @@
     </section>
     <!-- end section -->
     <!-- start section -->
-    <section class="s-c-social-media padding-100px-tb md-padding-75px-tb sm-padding-50px-tb wow animate__fadeIn bg-light-gray">
+    <section
+        class="s-c-social-media padding-100px-tb md-padding-75px-tb sm-padding-50px-tb wow animate__fadeIn bg-light-gray">
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-12 col-xl-4 col-lg-4 col-md-5 col-sm-6 text-center text-sm-right xs-margin-20px-bottom">
-                    <span
-                        class="alt-font font-weight-700 text-extra-large d-block ">Síguenos
+                    <span class="alt-font font-weight-700 text-extra-large d-block ">Síguenos
                         en nuestras redes sociales</span>
                 </div>
                 <div class="col-12 col-md-2 d-none d-md-block">
@@ -252,8 +251,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col h-600px p-0 md-h-450px xs-h-300px">
-                    <iframe class="w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15697.74776416099!2d-75.49272735234727!3d10.386828633970097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef62424f1051471%3A0xb3e47b8e7cd10a9b!2sSERVICIOS%20INTEGRALES%20Y%20GESTION%20SIG%20S.A.S!5e0!3m2!1ses-419!2sco!4v1706481307972!5m2!1ses-419!2sco"></iframe>
+                    <iframe class="w-100 h-100" id="contact-ubicacion"></iframe>
                 </div>
             </div>
         </div>
@@ -293,17 +291,8 @@
                     <div class="col-12 col-md-5 col-sm-6 xs-margin-25px-bottom">
                         <span
                             class="alt-font font-weight-700 d-block text-white text-medium margin-20px-bottom xs-margin-10px-bottom">Visítanos</span>
-                        <ul>
-                            <li>
-                                <p>Barrio Ternera</p>
-                                <p>Cra. 86 #33A-43</p>
-                                <span>Cartagena de indias - Colombia</span>
-                            </li>
-                            <li><a href="tel:3008271769"><img src="images/img-sig/icono-phone.svg"> (+57) 300 827
-                                    1769</a></li>
-                            <li><a href="mailto:gerencia@serviciosintegralesygsas.com"><img
-                                        src="images/img-sig/icono-mail.svg"> gerencia@serviciosintegralesygsas.com</a>
-                            </li>
+                        <ul id="footer-content">
+
                         </ul>
                     </div>
                     <!-- end footer column -->
@@ -319,10 +308,11 @@
                     </div>
                     <div class="col-12 col-sm-8 text-center text-sm-right last-paragraph-no-margin">
                         <div class="s-c-footer__social-media">
-                            <a href="#" class="s-c-header__facebook">
+                            <a href="https://www.facebook.com/profile.php?id=100063625026057"
+                                class="s-c-header__facebook">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="s-c-header__instagram ">
+                            <a href="https://www.instagram.com/sintegralesygestion/" class="s-c-header__instagram ">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
@@ -340,11 +330,18 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/theme-vendors.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/js_backoffice/application.js"></script>
+    <script type="text/javascript" src="js/js_backoffice/footer.js"></script>
+    <script type="text/javascript" src="js/js_backoffice/contact.js"></script>
+    <script type="text/javascript" src="js/contact-form.js"></script>
 
     <!-- revolution js files -->
     <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
     <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-
+    <script>
+        footerClient.init();
+        contactClient.init()
+    </script>
 
 </body>
 
